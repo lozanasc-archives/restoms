@@ -1,0 +1,23 @@
+@import '../../../../../../theme/theme';
+
+.PolicyAgreementContainer {
+    display: flex;
+    flex-flow: column;
+    background-color: GetColorTheme(Main);
+    .InnerContainer {
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        .PolicyContainer{
+            background-color: GetColorTheme(Base);
+            border-radius: 30px;
+            padding: 5px;
+            margin: auto;
+            max-width: clamp(60%, 70%, 80%);
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: clamp(1vh, 1rem, 3vw);
+            text-align: center;
+        }
+    }
+}

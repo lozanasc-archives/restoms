@@ -1,0 +1,202 @@
+@import '../../../../theme/theme';
+
+.Contrast {
+    background-color: GetColorTheme(MainContrast);
+}
+
+.NonContrast { 
+    background-color: GetColorTheme(Main);
+}
+
+.DashboardModalContainer {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    z-index: 1;
+    min-width: 85%;
+    min-height: 85%;
+    .DashboardModalBase {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 15px;
+        border-radius: 15px;
+        min-width: 50%;
+        max-width: 40vh;
+        min-height: 80vh;
+        filter: drop-shadow(2px 0 0.20rem rgba(0, 0, 0, 0.342));
+    }
+    .EditSettingInfoModal {
+        .InnerContainer {
+            display: flex;
+            flex-flow: column;
+            .ModalInputGroup {
+                display: flex;
+                flex-flow: column;
+                margin: 0 auto;
+            }
+            .ModalButtonGroup {
+                display: flex wrap;
+                margin: 5px auto;
+                .Button {   
+                    margin: 2px 2px;
+                    min-width: 120px;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+    .NewItemModal {
+        .InnerContainer {
+            display: flex;
+            flex-flow: column;
+            margin: auto;
+            .ModalButtonGroup {
+                display: flex wrap;
+                margin: 5px auto;
+                .Button {
+                    margin: 2px 2px;
+                    min-width: 120px;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+    .ItemModal {
+        border-radius: 15px;
+        min-width: 40vh;
+        max-width: 45vh;
+        min-height: 30vh;
+        max-height: 50vh;        
+        .Label {
+            margin: 0 auto;
+        }
+        .ModalButtonGroup {
+            display: flex wrap;
+            margin: 5px auto;
+            .Button {
+                margin: 2px 2px;
+                min-width: 100px;
+                max-width: 100px;
+            }
+        }
+    }
+    .ModifyItemModal {
+        min-width: 50vh;
+        max-width: 50vh;
+        min-height: 30vh;
+        max-height: 50vh;
+        .Textfield {
+            margin: 5px auto;
+        }
+        .ModalButtonGroup {
+            display: flex wrap;
+            margin: 5px auto;
+            .Button {
+                margin: 2px 2px;
+                min-width: 120px;
+                max-width: 120px;
+            }
+        }
+    }
+    .TransactionModal {
+        
+        max-width: 50vh;
+        min-height: 80vh;
+        .Label {
+            margin: 0 auto;
+        }
+        .OrderedItemsContainer {
+            display: flex;
+            flex-flow: column;
+            margin: auto;
+            border-radius: 10px;
+            padding: 5px;
+            min-width: 90%;
+            max-width: 90%;
+            min-height: 50vh;
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+        .ModalButtonGroup {
+            display: flex wrap;
+            margin: 5px auto;
+            .Button {
+                margin: 2px 2px;
+                min-width: 120px;
+                max-width: 120px;
+            }
+        }
+    }
+}
+
+.ModalContainer {    
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #ffff, $alpha: 0.2);
+    position: absolute;
+    z-index: 1;
+    padding: 25px;
+
+    .ModalBase { 
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        justify-content: space-evenly;
+        background-color: GetColorTheme(Main);
+        border-radius: 15px;
+    }
+
+    .FoodModal {
+        min-height: 30vh;
+        max-height: 50vh;
+        .Label {
+            margin: 0 auto;
+        }
+        .ModalButtonGroup {
+            display: flex;
+            margin: auto;
+            .Button {
+                margin: auto 2px;
+            }
+        }
+    }
+
+    
+
+    .CheckoutModal {
+        min-width: 35vh;
+        max-width: 55vh;
+        min-height: 70vh; 
+        overflow: scroll;  
+        .CheckoutContainer {
+            padding: 15px;
+            display: flex;
+            flex-flow: column;
+            background-color: GetColorTheme(Base);
+            min-height: 60%;
+            min-width: inherit;
+            justify-content: space-between;
+            border-radius: 15px;
+            .ModalList {
+                min-width: inherit;
+                min-height: 50vh;
+                max-height: 50vh;
+                overflow-y: scroll;
+            }
+            .ModalButtonGroup {
+                display: flex wrap;
+                margin: 5px auto;
+                .Button {
+                    margin: 2px 2px;
+                    min-width: 120px;
+                    max-width: 120px;
+                }
+            }
+        }
+        
+    }
+}

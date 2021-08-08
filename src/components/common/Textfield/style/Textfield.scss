@@ -1,0 +1,23 @@
+@import '../../../../theme/theme';
+
+.Textfield {
+    transition: 0.1s ease-in-out;
+    border: none;
+    border-radius: clamp(10px,100px,200px);
+    background-color: GetColorTheme(Base);
+    text-align: center;
+    font-family: GetFontTheme(Secondary) GetFontTheme(FallbackSecondary);
+    color: GetColorTheme(Main);
+    font-size: clamp(GetFontSize(Minimum)-2vh,GetFontSize(Regular)-1.5rem,GetFontSize(Maximum)-2vw);
+    font-weight: bold;
+    width: clamp(SetComponentWidth(Small), SetComponentWidth(Medium), SetComponentWidth(Large));
+    height: clamp(SetCompnentHeight(Small), SetCompnentHeight(Medium),SetCompnentHeight(Large));
+    margin: 10px auto;
+    padding: 10px;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-size: clamp(GetFontSize(Minimum)-2.5vh,GetFontSize(Regular)-1.5rem,GetFontSize(Maximum)-2vw);
+    }
+}

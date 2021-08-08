@@ -1,0 +1,49 @@
+@import '../../../../theme/theme';
+
+.Button {
+    border: none;
+    border-radius: 100px;
+    background-color: GetColorTheme(Main);
+    margin: 10px auto;
+    font-family: GetFontTheme(Accent), GetFontTheme(FallbackSecondary);
+    font-weight: bolder;
+    min-height: clamp(SetComponentHeight(Small) - 60px,SetComponentHeight(Medium) - 40px, SetComponentHeight(Large));
+    padding: 5px;
+    min-width: clamp(100px,150px,250px);
+    transition: 0.2s ease-in-out;
+    color: GetColorTheme(Base);
+    cursor: pointer;
+}
+
+.onActive {
+    &:hover{
+        filter: drop-shadow(0 6px 0.50rem rgba(0, 0, 0, 0.164));
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.DashboardButton {
+    display: flex;
+    border: none;
+    border-radius: 99999px;
+    background-color: GetColorTheme(Main);
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 20px auto;
+    img {
+        margin: auto;
+    }
+}
+
+.ButtonContrast {
+    background-color: GetColorTheme(MainContrast);
+}
+
+.Link {
+    text-align: center;
+    text-decoration: none;
+    min-height: 0;
+}

@@ -1,0 +1,45 @@
+@import "../../../../../../theme/theme";
+
+.AdminNavigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: GetColorTheme(Main);
+    border-radius: 0px 15px 15px 0px;
+    filter: drop-shadow(5px 0px 4px rgba(0, 0, 0, 0.400));
+    button {
+        cursor: pointer;
+    }
+    // ? When the viewport hits a particular width size the css changes code below will work
+    @include for-size(GetBreakpoint(Phone)){
+        
+        flex-flow: row;
+        border-radius: 5px 5px 0px 0px;
+        padding: 5px;
+
+        button {
+            display: none;
+        }
+
+        .DashboardButton {
+            height: 60px;
+            width: 60px;
+            margin: auto 10px;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        .NavButtonGroup {
+            display: flex;
+            flex-flow: row;
+            margin: auto;
+        }
+        
+        .Logo {
+            display: none;
+        }   
+    }
+}

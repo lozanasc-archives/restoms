@@ -1,0 +1,24 @@
+@import '../../../../../theme/theme';
+
+.LoginContainer {
+    display: flex;
+    flex-flow: column;    
+    height: 100vh;
+    .ButtonContainer {
+        margin: 12px 5px;
+        .Button {
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+    .FormContainer {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        #restoms-logo{
+            height: 100px; 
+            width: 100px;
+            margin: auto;
+        }
+    }
+}

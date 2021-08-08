@@ -1,0 +1,41 @@
+@import '../../../../../theme/theme';
+
+.ServiceMenuNavigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: auto;
+    padding: 20px;
+    background-color: GetColorTheme(Main);
+    border-radius: 0px 15px 15px 0px;
+    filter: drop-shadow(5px 0px 4px rgba(0, 0, 0, 0.400));
+    .NavButtonGroup {
+        margin: 25vh auto;
+    }
+    button {
+        cursor: pointer;
+    }
+    @include for-size(GetBreakpoint(Phone)){
+        
+        flex-flow: row;
+        border-radius: 5px 5px 0px 0px;
+        padding: 5px;
+
+        .DashboardButton {
+            height: 60px;
+            width: 60px;
+            margin: auto 20px;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        .NavButtonGroup {
+            display: flex;
+            flex-flow: row;
+            margin: auto;
+        }
+        .Logo {
+            display: none;
+        }   
+    }
+}

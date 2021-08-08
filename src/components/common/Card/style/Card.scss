@@ -1,0 +1,163 @@
+@import '../../../../theme/theme';
+
+* {
+    font-family: GetFontTheme(Heading);
+}
+// * Table Card Styling Properties
+.TableCard {
+    background-color: GetColorTheme(Base);
+    background-image: url('../../../../assets/table-card/table-card-.bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    transition: 0.3s ease-in-out;
+    font-size: clamp(GetFontSize(Minimum) - 4.1vh,GetFontSize(Regular) - 4rem, GetFontSize(Maximum) - 3vw);
+    color: GetColorTheme(Main);
+    margin: 5px 5px;
+    border-radius: 20px;
+    min-height: 120px;
+    min-width: 10%;
+    flex: 1 0 20%;
+    cursor: pointer;
+    span {
+        margin: auto;
+        text-align: center;
+        h1, h3, p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &:hover {
+        filter:drop-shadow(0 4px 0.9rem rgba(0, 0, 0, 0.336));
+    }
+}
+.TableCardTaken{
+    background-image: url('../../../../assets/table-card/table-card-.bg.png');
+    background-color: GetColorTheme(MainContrast);
+    cursor: default;
+    h1 {
+        color: GetColorTheme(Main);
+        text-align: center;
+        margin: auto;
+    }
+}
+// * Alert Card Styling Properties
+.AlertCard {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: GetColorTheme(Base);
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 10px auto;
+    font-family: GetFontTheme(Header);
+    font-size: clamp(GetFontSize(Minimum) - 3.7vh,GetFontSize(Regular) - 4rem, GetFontSize(Maximum) - 3vw);
+    text-align: center;
+    h1 {
+        color: GetColorTheme(MainContrast);
+        margin: 0;
+    }
+    img {
+        margin: -35px -40px;
+        height: 50px;
+        width: 50px;
+        position:absolute;
+        z-index: 2;
+    }
+}
+// * Food Item Card Styling Properties
+.FoodItemCard {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: GetColorTheme(Base);
+    display: flex;
+    flex-flow: column wrap;
+    transition: 0.3s ease-in-out;
+    font-size: clamp(GetFontSize(Minimum) - 4.1vh,GetFontSize(Regular) - 4rem, GetFontSize(Maximum) - 3vw);
+    color: GetColorTheme(Main);
+    margin: 5px 5px;
+    border-radius: 20px;
+    min-height: 100px;
+    min-width: 30%;
+    flex: 1 0 40%;
+    cursor: pointer;
+    h1 {
+        color: GetColorTheme(MainContrast);
+        margin: 0;
+    }
+    &:hover {
+        filter:drop-shadow(0 4px 0.9rem rgba(0, 0, 0, 0.336));
+    }
+}
+.FoodItemCardRounded {
+    border-radius: 9999px;
+}
+// * Checkout Food Card Styling Properties
+.CheckoutFoodCard {
+    display: flex;
+    background-color: GetColorTheme(Main);
+    justify-content: space-between;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+    border-radius: 100px 0 0 100px;
+    padding: 10px;
+    margin: 10px auto;
+    img {
+        border-radius: 10000px;
+        min-height: 60px;
+        min-width: 60px;
+        background-color: GetColorTheme(Base);
+        margin: auto 10px;
+    }
+    .CheckoutInfo {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        margin: auto;
+        h5 {
+            color: GetColorTheme(MainContrast);
+            margin: 0;
+        }
+        h6 {
+            color: GetColorTheme(Base);
+            margin: 0;
+        }
+    }
+    .ButtonContainer {
+        display: flex;
+        flex-flow: column;
+        button {
+            margin: auto 10px;
+        }
+    }
+}
+
+.Contrast {
+    background-color: GetColorTheme(MainContrast);
+}
+
+.ListCard {
+    display: flex;
+    flex-flow: column;
+    background-color: GetColorTheme(Base);
+    padding: 5px;
+    margin: 5px auto;
+    text-align: start;
+    min-width: inherit;
+    max-width: 90%;
+    min-height: 50px;
+    max-height: max-content;
+    border-radius: 10px;
+    color: GetColorTheme(Main);
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.322));
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+    h4 {
+        margin: auto 0;
+        text-align: start;
+    }
+}

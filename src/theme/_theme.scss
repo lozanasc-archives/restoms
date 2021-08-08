@@ -1,0 +1,173 @@
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Hind+Vadodara:wght@700&family=Montserrat:wght@700&display=swap');
+
+// Breakpoint List 
+$Breakpoints: (
+    Phone: 599px,
+    TabletPortraitUp: 600px,
+    TabletLandscapeUp: 900px,
+    DesktopUp: 1200px,
+    BigDesktopUp: 1800px
+);
+
+// Color Theme List
+$ColorTheme: (
+    Main: #355070,
+    MainContrast: #E56B6F,
+    Accent: #6D597A,
+    Accent1: #B56576,
+    Accent2: #EAAC8B,
+    Base: #ffffff
+);
+
+// Font Theme List
+$FontTheme: (
+    Heading: 'Montserrat',
+    Secondary: 'Hind Vadodara',
+    Accent: 'Cairo',
+    Fallback: 'Segoe UI',
+    FallbackSecondary: 'Arial'
+);
+
+// Font Size List
+$FontSizeList: (
+    Minimum: 5vh,
+    Regular: 5rem,
+    Maximum: 4vw
+);
+
+// Button, Textfield Size Width size List
+$ComponentWidthList: (
+    Large: 90%,
+    Medium: 70%,
+    Small: 40%
+);
+
+// Button, Textfield Size Height size List
+$ComponentHeightList: (
+    Large: 150px,
+    Medium: 85px,
+    Small: 55px
+);
+
+// GETTER FUNCTIONS
+
+/*
+BREAKPOINT FOR ALL VIEWPORTS
+@param $Device
+* You can pass the following as arguments:
+? Phone - returns 599px
+? TabletPortraitUp - returns 600px
+? TabletLandscapeUp - returns 900px
+? DeskopUp - returns 1200px
+? BigDesktopUp - returns 1900px
+*/
+@function GetBreakpoint($Device){
+    @return map-get($map: $Breakpoints, $key: $Device);
+}
+
+
+/*
+COLOR THEME
+@param $Color
+* You can pass the following as arguments:
+? Main - returns #355070
+? MainContrast - returns #E56B6F
+? Accent - returns #6D597A
+? Accent1 - returns #B56576
+? Accent2 - returns #EAAC8B
+? Base - returns #ffffff
+*/
+@function GetColorTheme($Color)
+{
+    @return map-get($map: $ColorTheme, $key: $Color);
+}
+
+/*
+FONT THEME
+@param $FontType
+* You can pass the following as arguments:
+? Heading - returns font family 'Montserrat'
+? Secondary - returns font family 'Hind Vadodara'
+? Accent - returns font family 'Cairo'
+* The fallbacks are in cases where there's no internet connection or if the fonts are not installed locally.
+? Fallback - returns font family 'Segoe UI'
+? FallbackSecondary - returns font family 'Arial'
+*/
+@function GetFontTheme($FontType)
+{
+    @return map-get($map: $FontTheme, $key: $FontType);
+}
+
+/*
+FONT SIZE
+@param $FontSize
+* You can pass the following as arguments:
+? Minimum - returns 5vh
+? Regular - returns 8rem
+? Maximum - returns 6vw
+*/
+@function GetFontSize($FontSize)
+{
+    @return map-get($map: $FontSizeList, $key: $FontSize);
+}
+
+// SETTER FUNCTIONS
+/*
+COMPONENT WIDTH
+@param $ComponentWidth
+* You can pass the following as arguments:
+? Large - returns 90%
+? Medium - returns 70%
+? Small - returns 40%
+*/
+@function SetComponentWidth($ComponentWidth)
+{
+    @return map-get($map: $ComponentWidthList, $key: $ComponentWidth);
+}
+/*
+COMPONENT HEIGHT
+@param $ComponentHeight
+* You can pass the following as arguments:
+? Large - returns 150px
+? Medium - returns 85px
+? Small - returns 55px
+*/
+@function SetComponentHeight($ComponentHeight)
+{
+    @return map-get($map: $ComponentHeightList, $key: $ComponentHeight);
+}
+
+
+
+/*
+    Mixins for Breakpoints
+*/
+@mixin for-size($size){
+    @if $size == GetBreakpoint(Phone) {
+        @media (max-width: GetBreakpoint(Phone)) {
+            @content;
+        }
+    }
+    @else if $size == GetBreakpoint(TabletPortraitUp) {
+        @media (max-width: GetBreakpoint(TabletPortraitUp)) {
+            @content;
+        }
+    }
+    @else if $size == GetBreakpoint(TabletLandscapeUp) {
+        @media (max-width: GetBreakpoint(TabletLandscapeUp)) {
+            @content;
+        }
+    }
+    @else if $size == GetBreakpoint(DesktopUp) {
+        @media (max-width: GetBreakpoint(DesktopUp)) {
+            @content;
+        }
+    }
+    @else if $size == GetBreakpoint(BigDesktopUp) {
+        @media (max-width: GetBreakpoint(BigDesktopUp)) {
+            @content;
+        }
+    }
+}
+

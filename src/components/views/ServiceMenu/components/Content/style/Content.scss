@@ -1,0 +1,79 @@
+@import '../../../../../../theme/theme';
+
+.MenuContentContainer {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 10px;
+    background-color: GetColorTheme(Base);
+    height: 97vh;
+    width: 95%;
+    border-radius: 25px;
+    padding: 20px;
+    overflow: auto;
+    .HomeContainer {
+        display: flex;
+        flex-flow: column;
+        .CardContainer {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            min-height: 100%;
+            margin: auto;
+            .CardGroup {
+                display: flex;
+                margin: auto;
+                .LinkBox {
+                    display: flex;
+                    flex-flow: column;
+                    min-height: 100px;
+                    min-width: 100px;
+                    border-radius: 25px;
+                    background-color: GetColorTheme(Main);
+                    a {
+                        margin: auto;
+                        text-decoration: none;
+                        color: GetColorTheme(Base);
+                    }
+                }
+                .Label {
+                    margin: auto 10px;
+                }
+            }
+        }
+    }
+    .AboutContainer {
+        display: flex;
+        flex-flow: column;
+        .MemberListContainer {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 5vh auto;
+            min-width: 100%;
+            justify-content: space-evenly;
+            .MemberCard {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+                min-height: 250px;
+                min-width: 250px;
+                padding: 15px;
+                background-color: GetColorTheme(Main);
+                border-radius: 25px;
+                margin: 5px auto;
+                img {
+                    margin: auto;
+                    min-height: 127px;
+                    min-width: 127px;
+                    max-height: 127px;
+                    max-width: 127px;
+                    border-radius: 9999px;
+                }
+            }
+        }
+    }
+
+    .ApiContainer {
+        display: flex;
+        flex-flow: column;
+    }
+}

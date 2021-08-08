@@ -1,0 +1,13 @@
+@import '../../../../theme/theme';
+
+.NotFound {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    background-color: GetColorTheme(Main);
+    .Info {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+}

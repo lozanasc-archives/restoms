@@ -1,0 +1,12 @@
+@import '../../../../../theme/theme';
+
+.ConfirmationContainer {
+    display: flex;
+    flex-flow: column;
+    // justify-content: space-between;
+    .InnerContainer {
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+    }
+}
