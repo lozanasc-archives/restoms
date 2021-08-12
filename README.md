@@ -1,4 +1,4 @@
-![Logo for our Web Application System](https://github.com/restauMS/web-based-restaurant-management-system/blob/main/public/apple-icon-144x144.png?raw=true)
+![Logo for our Web Application System](https://github.com/lozanasc-school/restoms/blob/main/public/apple-icon-120x120.png?raw=true)
 # Web-based Restaurant Management System
 A Software Analysis and Design / Software Engineering I project for the 1st semester of AY 2020-2021  
 ##### Members:  
