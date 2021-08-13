@@ -1,6 +1,10 @@
 <h1 align="center"> [ ARCHIVED ] </h1>
+<br>
+<p align="center">
+  <img src="https://github.com/lozanasc-school/restoms/blob/main/public/android-icon-144x144.png?raw=true"/>
+</p>
+<br>
 
-![Logo for our Web Application System](https://github.com/lozanasc-school/restoms/blob/main/public/apple-icon-120x120.png?raw=true)
 # Web-based Restaurant Management System
 A Software Analysis and Design / Software Engineering I project for the 1st semester of AY 2020-2021  
 ##### Members:  
