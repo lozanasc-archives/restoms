@@ -16,10 +16,10 @@
     <a href="https://github.com/lozanasc-archives/restoms/issues">Report Bug</a>
     ·
     <a href="https://github.com/lozanasc-archives/restoms/issues">Request Feature</a>
-    .
-    <a href="">[STATUS ARCHIVED, WILL BE REVAMPING THE SYSTEM SOON]</a>
   </p>
 </p>
+<br/>
+<a href="">Currently archived, will be revamping the system soon</a>
 
 
 
