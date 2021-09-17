@@ -162,7 +162,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@devzana](https://twitter.com/devzana) - email@example.com
+Sean Christian Lozana - [@devzana](https://twitter.com/devzana) - lozanasc@gmail.com
 
 Project Link: [https://github.com/lozanasc-archives/restoms](https://github.com/lozanasc-archives/restoms)
 
