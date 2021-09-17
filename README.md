@@ -1,90 +1,169 @@
-<h1 align="center"> [ ARCHIVED ] </h1>
-<br>
+<!-- PROJECT LOGO -->
+<br />
 <p align="center">
-  <img src="https://github.com/lozanasc-school/restoms/blob/main/public/android-icon-144x144.png?raw=true"/>
+  <a href="https://github.com/lozanasc-archives/restoms">
+    <img src="src/assets/restoms-logo/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">RestoMS</h3>
+
+  <p align="center">
+    A web-based Restaurant Management System-ish... 😅
+    <br />
+    <br />
+    <a href="">Demo not available</a>
+    ·
+    <a href="https://github.com/lozanasc-archives/restoms/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/lozanasc-archives/restoms/issues">Request Feature</a>
+  </p>
 </p>
-<br>
 
-# Web-based Restaurant Management System
-A Software Analysis and Design / Software Engineering I project for the 1st semester of AY 2020-2021  
-##### Members:  
-- Sean Christian Lozana: Lead Developer and Support Designer  
-- Leo Lloyd Catalan: Lead Designer and Support Developer  
-- Erica Marie Pasitidio: Project Lead and Support Analyst  
-- Lizette Bandian Vendiola: Lead Analyst  
-*****
-# Instruction:  
-## Before Running the Scripts
-### `cd web-based-restaurant-management-system`  
-### `npm install`
-Wait for npm to finish installing all the needed dependencies  
-After the install you can now try `npm start`  
-***
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Product Name Screen Shot](https://github.com/lozanasc-archives/restoms/blob/main/samples/Screenshot%202021-09-16%20164810.png?raw=true)
 
-### `npm run build`
+The main purpose of this project is to hopefully help businesses mainly in the Food Industry to create an overall good experience for Customers when dining in especially with heavy restrictions set by the IATF due to the pandemic. The system does not only serve the purpose of improving 'Customer' experience but also for the Clients' convenience, we aim to create a system that is affordable to implement, easy to use and since the system is developed using Web technologies it can be used almost in any platform available and for this, it already has cut down the cost of having to build different native application codebases in each platform. Another purpose of this project is to encourage the use of Technology more in businesses especially here in the locality.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Restaurant Management System has three (3) different components, one is for the Customer; this includes the Logging feature for IATF protocol compliance, next is the Menu that customers can choose food from, another is a Table management feature where customers can pick their table of choice before completing the order session, this can also serve as a piece of additional traceable information for the authorities if need be and lastly is the Checkout where the customer is given two (2) payment method of choices which are: cash or electronic(includes credit/debit card, Pay Maya, GCash, etc.…), while the system gives out the option for cash, the system also encourages electronic through a discount point each time you pay electronically this will serve as an incentive for helping the community by reducing human contact.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The 2nd service is the Worker service wherein the Worker can log in and will be given access to a dashboard that contains all existing order sessions. The Worker can also edit the order items if the Customer wished to order additional food. The Worker can end the order session and proceed to the billing and checkout, once a checkout session is successful the table associated with that session will be freed therefore can be acquired by other customers. The worker can also log out and end his/her session that will also serve as the time in and time out for that day. Lastly, we have the Admin service where the admin can log in and view a dashboard analytic for best-selling food, most popular people's table of choice, and the Worker with the most order session completed. The admin can also create, retrieve, update and delete Worker information, Order session information, and Food item information on the database, next is the Admin can also change the theme color of the User Interface, and lastly the Admin can log out and end-user session. All these services are all under but 1 main system divided into three (3) sub-components, and each feature is also a component on its own for re-usability purposes.
 
-### `npm run eject`
+### Built With
+This system was built with the following technologies:  
+* [ReactJS](https://reactjs.org/)
+* [NodeJS](https://nodejs.org/en/)
+* [Express](http://expressjs.com/)
+* [MySQL](https://www.mysql.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- GETTING STARTED -->
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Hey there! You might be new, if you don't know how to run a MERN project locally, no worries just follow the instructions below!  
 
-## Learn More
-***
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You'll be alright 💪  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+Let's start with the prerequisites, make sure you have the following installed in your local machine
+* [npm](https://nodejs.org/en/)
+  ```sh
+  npm install npm@latest -g
+  ```  
+* [nodejs](https://nodejs.org/en/)
+  ```sh
+  # To check if its installed
+  node -v
+  ```  
+* [mysql server and workbench](https://dev.mysql.com/downloads/windows/installer/8.0.html)  
+* [mysql](https://www.mysql.com/)
+  ```sh
+  mysql -h 127.0.0.1 -u root -p
+  ```  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Installation
 
-### Analyzing the Bundle Size
+1. Clone the repo
+   ```sh
+   git clone https://github.com/lozanasc-archives/restoms.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run it! ✨
+   ```sh
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- USAGE EXAMPLES -->
+## Usage
+Here are the sample images of what you do with the system...  
+  
+### Worker and Admin  
+![Dashboard](https://github.com/lozanasc-archives/restoms/blob/main/samples/Dashboard%20Sample.png?raw=true)  
+![Transaction](https://github.com/lozanasc-archives/restoms/blob/main/samples/Transaction%20Sample.png?raw=true)  
+![Inventory](https://github.com/lozanasc-archives/restoms/blob/main/samples/Inventory%20Sample.png?raw=true)  
+![Settings](https://github.com/lozanasc-archives/restoms/blob/main/samples/Settings%20Sample.png?raw=true)  
+  
+### Customer
+![Table](https://github.com/lozanasc-archives/restoms/blob/main/samples/Table%20Sample.png?raw=true)  
+![Menu](https://github.com/lozanasc-archives/restoms/blob/main/samples/Menu%20Sample.png?raw=true)  
+![Completion](https://github.com/lozanasc-archives/restoms/blob/main/samples/Completion%20Sample.png?raw=true)  
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- ROADMAP -->
+## Roadmap
 
-### Deployment
+See the [open issues](https://github.com/lozanasc-archives/restoms/issues) for a list of proposed features (and known issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-***
-###### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@devzana](https://twitter.com/devzana) - email@example.com
+
+Project Link: [https://github.com/lozanasc-archives/restoms](https://github.com/lozanasc-archives/restoms)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+**Developer/Designer/Analyist/Researcher:** _Sean Christian Lozana_
