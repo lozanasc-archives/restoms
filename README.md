@@ -19,7 +19,9 @@
   </p>
 </p>
 <br/>
-<a href="">Currently archived, will be revamping the system soon</a>
+<p align="center">
+  <a href=""><b>Currently archived, will be revamping the system soon<b/></a>
+</p>
 
 
 
